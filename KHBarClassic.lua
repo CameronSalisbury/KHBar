@@ -4,7 +4,6 @@
 SLASH_RELOADUI1 = "/rl"
 SlashCmdList.RELOADUI = ReloadUI
 
-
 --------------------------------------------------------------------------------------------------
 --[[
 --This will work on its own. just displays the art i made	
@@ -41,8 +40,8 @@ local mask = Health:CreateMaskTexture()
 mask:SetTexture("Interface\\Addons\\KHBar\\media\\HealthbarMask1", "CLAMPTOBLACKADDITIVE", "CLAMPTOBLACKADDITIVE")
 mask:SetPoint("TOPLEFT", Health, "TOPLEFT", 0, 0)
 mask:SetPoint("BOTTOMRIGHT", Health, "BOTTOMRIGHT", 0, 0)
- 
-health:GetStatusBarTexture():AddMaskTexture(mask)
+
+Health:GetStatusBarTexture():AddMaskTexture(mask)
 
 -----------------------------------------
 Health:SetStatusBarTexture(defaults.player.textures.healthBarStretch)
